@@ -9,8 +9,9 @@ int main() {
   stdio_init_all();
 
   gpio_init(LED_PIN_R); //inicia led vermelho
-  gpio_init(LED_PIN_Y);
   gpio_set_dir(LED_PIN_R, GPIO_OUT); //define led vermelho como saida
+
+  gpio_init(LED_PIN_Y);
   gpio_set_dir(LED_PIN_Y, GPIO_OUT);
 
   while (true) {
